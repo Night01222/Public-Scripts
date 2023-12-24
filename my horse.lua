@@ -91,9 +91,8 @@ strImageButton.Position = UDim2.new(0.0350000001, 0, 0.100000001, 0)
 strImageButton.Size = UDim2.new(0, 15, 0, 15)
 strImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
 strImageButton.MouseButton1Click:Connect(function()
-    local f = game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[1].Hitbox:FindFirstChild("TouchInterest")
+    local f = game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox:FindFirstChild("TouchInterest")
     if f then
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[1].Hitbox.TouchInterest:Destroy()
         game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.TouchInterest:Destroy()
         game.workspace.Training.Arenas.Strength.Obstacles.Obstacle.Hitbox.TouchInterest:Destroy()
         game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[3].Hitbox.TouchInterest:Destroy()
