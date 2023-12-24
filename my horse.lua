@@ -106,10 +106,10 @@ strImageButton.MouseButton1Click:Connect(function()
     end
     if strImageButton.Image == "http://www.roblox.com/asset/?id=13243454208" then 
         strImageButton.Image = "http://www.roblox.com/asset/?id=13240175708"
-        sto = 1
         pl.CFrame = CFrame.new(-170.099426, 6.90874863, -343.075745, -0.00108343514, -6.55046719e-08, 0.999999404, 4.52787638e-08, 1, 6.55537633e-08, -0.999999404, 4.53497613e-08, -0.00108343514)
         game.workspace.Training.Arenas.Strength.Stars:WaitForChild(nam)
         game.workspace.Training.Arenas.Strength.Stars[nam]:WaitForChild("Hitbox")
+	sto = 1
         while sto == 1 do
             pl.CFrame = CFrame.new(-243.323349, 6.9198513, -474.663879, -0.99933666, -5.06991471e-09, -0.036418058, -3.0807179e-09, 1, -5.46772867e-08, 0.036418058, -5.45288223e-08, -0.99933666)
             horse.HumanoidRootPart.CFrame = CFrame.new(-243.336975, 4.37197113, -475.037231, -0.99933666, -8.69339445e-09, -0.036418058, -5.28094501e-09, 1, -9.37983202e-08, 0.036418058, -9.35437825e-08, -0.99933666)
@@ -136,10 +136,10 @@ swiImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
 swiImageButton.MouseButton1Click:Connect(function()
     if swiImageButton.Image == "http://www.roblox.com/asset/?id=13243454208" then 
         swiImageButton.Image = "http://www.roblox.com/asset/?id=13240175708"
-        swi = 1
         pl.CFrame = CFrame.new(-2.146698, 3.22397184, -101.885986, 0.0173106212, -1.00503264e-07, 0.999850154, 3.33932384e-08, 1, 9.99401806e-08, -0.999850154, 3.16582067e-08, 0.0173106212)
         game.workspace.Training.Arenas.Swiftness.Stars:WaitForChild(nam)
         game.workspace.Training.Arenas.Swiftness.Stars[nam]:WaitForChild("Hitbox")
+        swi = 1
         while swi == 1 do 
             pl.CFrame = CFrame.new(-12.4215851, 6.91984415, -154.334091, 0.9993819, -3.57503249e-09, 0.0351546817, 4.31264247e-10, 1, 8.9434316e-08, -0.0351546817, -8.93638727e-08, 0.9993819)
             horse.HumanoidRootPart.CFrame = CFrame.new(-12.4174166, 4.3940711, -154.123184, 0.999839306, 1.62703145e-06, 0.0179261006, -1.44117405e-06, 1, -1.03809034e-05, -0.0179261006, 1.03534003e-05, 0.999839306)
@@ -196,10 +196,10 @@ agiImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
 agiImageButton.MouseButton1Click:Connect(function()
     if agiImageButton.Image == "http://www.roblox.com/asset/?id=13243454208" then 
         agiImageButton.Image = "http://www.roblox.com/asset/?id=13240175708"
-        agi = 1
         pl.CFrame = CFrame.new(-171.467178, 3.22397137, -45.3746834, -0.999999225, -1.37249474e-08, -0.00123009935, -1.367059e-08, 1, -4.41979857e-08, 0.00123009935, -4.41811352e-08, -0.999999225)
         game.workspace.Training.Arenas.Agility.Stars:WaitForChild(nam)
         game.workspace.Training.Arenas.Agility.Stars[nam]:WaitForChild("Hitbox")
+	agi = 1
         while agi == 1 do 
             pl.CFrame = CFrame.new(-229.078018, 6.91985178, -41.3156471, 0.102272928, 6.37507398e-08, 0.994756401, -2.71755134e-08, 1, -6.12928162e-08, -0.994756401, -2.07644195e-08, 0.102272928)
             horse.HumanoidRootPart.CFrame = CFrame.new(-228.598862, 4.38594055, -41.2663956, 0.102272928, -1.78054549e-08, 0.994756401, 7.59256125e-09, 1, 1.71187047e-08, -0.994756401, 5.80196868e-09, 0.102272928)
