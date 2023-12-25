@@ -90,22 +90,21 @@ strImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 strImageButton.Position = UDim2.new(0.0350000001, 0, 0.100000001, 0)
 strImageButton.Size = UDim2.new(0, 15, 0, 15)
 strImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
-strImageButton.MouseButton1Click:Connect(function()
-    local f = game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox:FindFirstChild("TouchInterest")
-    if f then
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles.Obstacle.Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[3].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[4].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[5].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[6].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[7].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[8].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[9].Hitbox.TouchInterest:Destroy()
-        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[10].Hitbox.TouchInterest:Destroy()
-    end
+strImageButton.MouseButton1Click:Connect(function)
     if strImageButton.Image == "http://www.roblox.com/asset/?id=13243454208" then 
         strImageButton.Image = "http://www.roblox.com/asset/?id=13240175708"
+        if game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.CanTouch == true then
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles.Obstacle.Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[3].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[4].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[5].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[6].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[7].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[8].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[9].Hitbox.CanTouch = false
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[10].Hitbox.CanTouch = false
+        end
         pl.CFrame = CFrame.new(-170.099426, 6.90874863, -343.075745, -0.00108343514, -6.55046719e-08, 0.999999404, 4.52787638e-08, 1, 6.55537633e-08, -0.999999404, 4.53497613e-08, -0.00108343514)
         game.workspace.Training.Arenas.Strength.Stars:WaitForChild(nam)
         game.workspace.Training.Arenas.Strength.Stars[nam]:WaitForChild("Hitbox")
@@ -124,6 +123,18 @@ strImageButton.MouseButton1Click:Connect(function()
         elseif strImageButton.Image == "http://www.roblox.com/asset/?id=13240175708" then
             strImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
             sto = 0
+	    if game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.CanTouch == false then
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles.Obstacle.Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[3].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[4].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[5].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[6].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[7].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[8].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[9].Hitbox.CanTouch = true
+        game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[10].Hitbox.CanTouch = true
+           end
     end
 end)
 
