@@ -90,7 +90,7 @@ strImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 strImageButton.Position = UDim2.new(0.0350000001, 0, 0.100000001, 0)
 strImageButton.Size = UDim2.new(0, 15, 0, 15)
 strImageButton.Image = "http://www.roblox.com/asset/?id=13243454208"
-strImageButton.MouseButton1Click:Connect(function)
+strImageButton.MouseButton1Click:Connect(function()
     if strImageButton.Image == "http://www.roblox.com/asset/?id=13243454208" then 
         strImageButton.Image = "http://www.roblox.com/asset/?id=13240175708"
         if game.workspace.Training.Arenas.Strength.Obstacles:GetChildren()[2].Hitbox.CanTouch == true then
